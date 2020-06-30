@@ -1,1 +1,1 @@
-# CodeCademy - Nurik's cool project.
+# CodeCademy - Nurik's cool project!
