@@ -1,4 +1,6 @@
-# CodeCademy projects done by myself under course supervision  
-# Courses:
-- Create a Back-End App with JavaScript
+# CodeCademy projects done by me under course supervision  
+Courses:
+- Skill path: Create a Back-End App with JavaScript
+- Skill path: Learn C++ 
+- Career path: Web Development 
 
