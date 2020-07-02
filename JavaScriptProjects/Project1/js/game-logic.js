@@ -12,45 +12,44 @@ let playerOneMoveOneType,
     playerTwoMoveTwoValue,
     playerTwoMoveThreeValue; 
 
-// Function 'setPlayerMoves()'  to pass in parameters type and moves of the players. 
-function setPlayerMoves(palyer, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue){
-    // Case if no values are entered
-    if(!moveOneType || !moveOneValue || !moveTwoType || !moveTwoValue || !moveThreeType || !moveThreeValue){
+// Function to pass in parameters type and moves of the players.
+function setPlayerMoves(player, moveOneType, moveOneValue, moveTwoType, moveTwoValue, moveThreeType, moveThreeValue) {
+    //If no values entered
+    if (!moveOneType || !moveOneValue || !moveTwoType || !moveTwoValue || !moveThreeType || !moveThreeValue) {
         return;
-        }
-    
-    if(!isValidMoveType(moveOneType) || !isValidMoveType(moveTwoType) ||!isValidMoveType(moveThreeType)){
+    }
+    //If not valid type is entered
+    if (!isValidMoveType(moveOneType) || !isValidMoveType(moveTwoType) || !isValidMoveType(moveThreeType)) {
         return;
-        }   
-
-    if(!isValidMoveValue(moveOneValue) || !isValidMoveValue(moveTwoValue) ||!isValidMoveValue(moveThreeValue)){
+    }
+    //If not valid value is entered 
+    if (!isValidMoveValue(moveOneValue) || !isValidMoveValue(moveTwoValue) ||!isValidMoveValue(moveThreeValue)) {
         return;
-        }
-    
-    if((moveOneValue + moveTwoValue + moveThreeValue) > 99){
+    }
+    // If entered values are too big
+    if ((moveOneValue + moveTwoValue + moveThreeValue) > 99) {
         return;
-        }
-    if (player === 'Player One'){
+    }
+    // Assigning the entered values 
+    if (player === 'Player One') {
         playerOneMoveOneType = moveOneType;
         playerOneMoveOneValue = moveOneValue;
         playerOneMoveTwoType = moveTwoType;
         playerOneMoveTwoValue = moveTwoValue;
         playerOneMoveThreeType = moveThreeType;
         playerOneMoveThreeValue = moveThreeValue;
-    } else if(player === 'Player Two') {
+    } else if (player === 'Player Two') {
         playerTwoMoveOneType = moveOneType;
         playerTwoMoveOneValue = moveOneValue;
         playerTwoMoveTwoType = moveTwoType;
         playerTwoMoveTwoValue = moveTwoValue;
         playerTwoMoveThreeType = moveThreeType;
         playerTwoMoveThreeValue = moveThreeValue;
-        }
+    }
 }
-
 // Function to validate the passed type
 function isValidMoveType(moveType){
     return (moveType ==='rock') || (moveType === 'paper') || (moveType === 'scissors');
-
 }
 
 //Functon to validate the passed value
