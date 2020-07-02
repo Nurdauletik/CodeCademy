@@ -1,1 +1,2 @@
-# CodeCademy - Nurik's cool project!
+# CodeCademy - First day playing with Git 
+
