@@ -34,7 +34,7 @@ const toggleDrum = (drumArrayName, index) => {
 
 //Function that takes an array name string and sets all values in the correct array to false
 const clear = (drumArrayName) => {
-    const ddrums = getDrumArrayByName(drumArrayName);
+    const drums = getDrumArrayByName(drumArrayName);
     if(drums){
         drums.fill(false);
     }

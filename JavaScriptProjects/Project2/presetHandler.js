@@ -33,5 +33,6 @@ const presetHandler = (method, index, newPresetArray) => {
         return [400];
     }
 };
+
 // Leave this line so that your presetHandler function can be used elsewhere:
 module.exports = presetHandler;
